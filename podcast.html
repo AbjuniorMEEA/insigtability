@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcasts</title>
+
+    <!-- Font Awsome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="http://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--  owl-carousel -->
+
+<link rel="stylesheet" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+<!-- Css custom style link and Js file setup -->
+<link rel="stylesheet" href="./css/style.css">
+<!-- Css custom style link and Js file setup -->
+
+</head>
+
+<!---------------------   Navigation------------------------- -->
+<Pod1>
+<body>
+<nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="index.html" class="text-gray">
+                    <svg>
+                    <rect>
+                    </rect>
+                </svg>
+                Insightability</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars">
+                    </i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+            <li class="nav-link">
+                <a href="index.html">Home</a>
+                </li>
+            <li class="nav-link">
+                <a href="#">Career's</a>
+                </li>
+            <li class="nav-link">
+                <a href="magazine.html">Magazines</a>
+                </li>
+            <li class="nav-link">
+                <a href="podcast.html">Podcasts</a>
+                </li>
+            <li class="nav-link">
+                <a href="login.html"> Hello
+    
+                <?php echo $user_data['user_name']; ?>
+    
+                </a>
+                </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!------------------------Navigation---------------------------->
+    
+<!-- Podcast# sections -->
+<div class="p1-container">
+<main class="p-grid">
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material-icons">more_horiz</i>
+        </div>
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+    
+        <div class="song-details">
+                <p class="name">The Epics of Gilgamesh</p>
+                <p class="artist">TEDX</p>
+            </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+                <span></span>
+            </div>
+    
+            <div class="timer">
+                <span class="current">0:00</span>
+    
+                <span class="duration"></span>
+            </div>
+                <audio id="main-audio" src="/songs/music-1.mp3"></audio>
+        </div>
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            
+            <div class="play-pause">
+                <i class="material-icons">play_arrow</i>
+            </div>
+    
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="material-icons">queue_music</i>
+                    <span>Music list</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+            <ul>
+    
+            </ul>
+        </div>
+        
+        </div>
+        <div class="pod-container">
+    <div class="pod-card">
+        <div class="pod-icon">
+            <img src="/assets/podcast/open-book.png" alt="">
+        </div>
+        
+        <div class="pod-content">
+            <h3>Podcast-Infomation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, veritatis, eos cumque iure exercitationem fugit quae, blanditiis quos vitae reprehenderit minima similique quo. Earum quam, soluta animi amet quod asperiores cupiditate possimus veniam eligendi corrupti placeat nam ab nemo, recusandae quos. In veritatis magni soluta ex repellendus expedita fuga nam ipsa molestiae quod non cumque delectus, eum sequi voluptatibus maxime officia magnam cupiditate facilis porro ad sed quidem ipsum. Accusamus quisquam assumenda, unde quibusdam alias enim cum eius quos, veniam, deserunt repellat tempore vel quasi modi est? Deleniti voluptas maxime ab dolore autem, soluta similique. Suscipit, incidunt ullam? Provident magnam, alias repellendus quia ut, facere tempore delectus ratione possimus laborum deleniti doloremque atque animi, deserunt quos ex voluptatibus libero amet corporis accusamus modi nesciunt. Dolores magnam consequuntur nulla impedit ducimus quas error reprehenderit nesciunt provident harum. Veniam libero deleniti praesentium officiis sit facere, assumenda consectetur quod tempora, architecto illo? Laudantium, quas repellendus? Necessitatibus provident fugit odio. Asperiores modi, alias numquam vitae praesentium enim nostrum iste ullam expedita corporis earum consequatur, qui aspernatur tempora fugiat? Quisquam dolorum aut consequuntur magnam quod explicabo distinctio voluptatem. Delectus molestiae maxime, eveniet, alias minus maiores ducimus deserunt at accusamus dignissimos blanditiis consequuntur minima autem repellendus?</p>
+        </div>
+        <a class="pod-more"></a>
+    </div>
+</div>
+<script>
+    let more = document.querySelectorAll('.pod-more');
+    for (let i = 0; i<more.length; i++){
+        more[i].addEventListener('click',function(){
+            more[i].parentNode.classList.toggle('active')
+        });
+    }
+</script>
+</main>
+</div>
+
+
+<!-- Podcast# sections -->
+
+    <!-- -------------------- Footer-Contents---------------- -->
+    
+<footer class="footer">
+            <div class="container">
+                <div class="about-us">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero doloribus voluptatem nostrum? 
+                    Assumenda aspernatur, recusandae quod quisquam repellendus placeat.</p>
+                </div>
+                <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Stay updated with the  latest info</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+                </div>
+                <div class="instagram">
+                <h2>Instagram</h2>
+                <div class="div flex-row">
+                    <img src="./assets/instagram/thumb-card3.png" alt="insta1">
+                    <img src="./assets/instagram/thumb-card4.png" alt="insta2">
+                    <img src="./assets/instagram/thumb-card5.png" alt="insta3">
+                </div>
+                <div class="div flex-row">
+                    <img src="./assets/instagram/thumb-card6.png" alt="insta4">
+                    <img src="./assets/instagram/thumb-card7.png" alt="insta5">
+                    <img src="./assets/instagram/thumb-card8.png" alt="insta6">
+    
+                </div>
+                </div>
+                <div class="follow">
+                    <h2>Follow us</h2>
+                    <p>Let Us Be Social</p>
+                    <div>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+    
+    
+                </div>
+            </div>
+            <div class="right flex-row">
+                <h4 class="text-gray"> Copyright &copy; 2021 All rights reserved 
+                    | <a href="https://www.linkedin.com/in/abjunior-mohammed-abubakar-664605180/" target="_black">Designed by Abjunior MEA&nbsp;<i class="fab fa-linkedin"> </i></a> </h4>
+            </div>
+            <div class="move-up">
+                <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+            </div>
+        </footer>
+    
+        <!-- ----------x---------- Footer-Contents--------x-------- -->
+    
+    <!-- Jquery Library Files -->
+    <script src="./js/Jqueryv3.6.0.min.js"></script>
+    
+    <!-- Owl-carousel js -->
+    <script src="./js/owl.carousel.min.js"></script>
+    
+
+    <!-- custom java scripts -->
+        <script src="./js/main.js" ></script>
+        <script src="js/music-list.js"></script>
+        <script src="js/script.js"></script>
+</Pod1>
+</body>
+</html>
+
+
